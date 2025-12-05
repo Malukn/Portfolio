@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 1,
     }
   );
 
   targets.forEach((el) => observer.observe(el));
 });
+
