@@ -482,4 +482,11 @@ body {
   .work-thumb {
     width: 100%;
   }
+  @media (max-windth: 768px) {
+    .fade-in{
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
+
