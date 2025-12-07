@@ -13,7 +13,8 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS は index.html と同じ階層にある前提 -->
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header class="site-header">
@@ -35,8 +36,8 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner fade-in">
+    <section class="hero fade-in">
+      <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-subtitle">Web Developer / Learner</p>
           <h1 class="hero-title">
@@ -64,8 +65,8 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
-      <div class="container fade-in">
+    <section id="about" class="section fade-in section-about">
+      <div class="container">
         <h2 class="section-title">About</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -74,7 +75,7 @@
                 現在はSESとしてサーバ運用・監視の現場に携わりつつ、Webフロントエンドの学習を進めています。
               </p>
               <p>
-                某証券会社の24時間運用・保守案件に参画し、監視アラート対応やログ調査、一次切り分け、ベンダー連携、復旧後の確認といったインシデント対応を日常的に行っています。手順書の精査や引継ぎ資料の作成にも関わり、正確性と情報整理力が求められる環境で経験を積んできました。
+                某証券会社の24時間運用・保守案件に参画し、監視アラート対応やログ確認、一次切り分け、ベンダー連携、復旧後の確認といったインシデント対応を日常的に行っています。手順書の精査や引継ぎ資料の作成にも関わり、正確性と情報整理力が求められる環境で経験を積んできました。
               </p>
               <p>
                 学生時代はC#とUnityを用いて、個人制作1本・チーム制作2本のゲーム開発を経験しました。個人制作では企画・立案から実装まで一貫して担当し、チーム制作ではリーダーとして進行管理や仕様整理を行ったプロジェクトと、メンバーとしてMayaを使用した3Dモデル制作を担当したプロジェクトに参加しました。リーダーとして制作した作品は展示候補に選出されるなど、企画力や調整力の基礎を学ぶきっかけとなりました。
@@ -83,7 +84,7 @@
                 今はHTML/CSSとJavaScriptを中心に、ポートフォリオサイトや小さなWebページを作りながらスキルアップを目指しています。
               </p>
               <p>
-                また、全国でも数百人程度と言われる少し珍しい苗字で、初対面の方との会話のきっかけになることが多いです。名前も含めて覚えてもらいやすいことを活かして、人とのつながりを大切にしていきたいと考えています。
+                また、全国でも数百人程度と言われる少し珍しい苗字で、初対面の方との会話のきっかけになることが多いです。名前も含めて覚えてもらいやすいことを活かして、人とのつながりが大切な現場にしていきたいと考えています。
               </p>
               <p>
                 人の気持ちや使うシーンを想像しながら、「少しでも楽になる・安心できる」UIを作ることを大切にしています。
@@ -95,8 +96,8 @@
     </section>
 
     <!-- Vision -->
-    <section id="vision" class="section section-alt">
-      <div class="container fade-in">
+    <section id="vision" class="section section-alt fade-in section-vision">
+      <div class="container">
         <h2 class="section-title">Vision</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -120,8 +121,8 @@
     </section>
 
     <!-- Strength -->
-    <section id="strength" class="section">
-      <div class="container fade-in">
+    <section id="strength" class="section fade-in section-strength">
+      <div class="container">
         <h2 class="section-title">Strength</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -169,8 +170,8 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section section-alt">
-      <div class="container fade-in">
+    <section id="skills" class="section section-alt fade-in section-skills">
+      <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -197,13 +198,6 @@
                 </p>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">Ops</div>
-                <p class="skill-name">サーバ運用・監視</p>
-                <p class="skill-desc">
-                  24時間体制の運用案件で、監視アラート対応、ログ調査、一次切り分け、ベンダー連携、復旧後確認まで一連のインシデント対応を経験しています。
-                </p>
-              </div>
-              <div class="skill-card">
                 <div class="skill-icon">C#</div>
                 <p class="skill-name">C# / Unity</p>
                 <p class="skill-desc">
@@ -217,8 +211,8 @@
     </section>
 
     <!-- Works -->
-    <section id="works" class="section">
-      <div class="container fade-in">
+    <section id="works" class="section fade-in section-works">
+      <div class="container">
         <h2 class="section-title">Works</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -249,8 +243,8 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container fade-in">
+    <section id="contact" class="section section-alt fade-in section-contact">
+      <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="section-flex">
           <div class="section-text">
@@ -279,7 +273,4 @@
   <script src="./script.js"></script>
 </body>
 </html>
-
-
-
 
