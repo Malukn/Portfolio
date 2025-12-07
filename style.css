@@ -482,11 +482,13 @@ body {
   .work-thumb {
     width: 100%;
   }
-  @media (max-windth: 768px) {
-    .fade-in{
-      opacity: 1;
-      transform: none;
-    }
-  }
 }
 
+/* スマホではフェードインを常時表示に */
+@media (max-width: 768px) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
