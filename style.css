@@ -465,6 +465,15 @@ body {
   .strength-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  main {
+  scroll-snap-type: y mandatory;
+  }
+
+  .hero,
+  .section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 }
 
 /* スマホなど */
@@ -509,4 +518,5 @@ body {
     transition: none;
   }
 }
+
 
