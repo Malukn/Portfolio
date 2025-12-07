@@ -428,6 +428,23 @@ body {
 
 /* PCでは「1画面1セクション」風＋Strengthを3列に */
 @media (min-width: 1024px) {
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    scroll-snap-type: y mandatory; /* 縦方向に「必ず」スナップ */
+    scroll-behavior: smooth;       /* セクション移動をなめらかに */
+  }
+
+  /* スナップさせたい要素に align を付ける */
+  .hero,
+  .section {
+    scroll-snap-align: start;      /* 画面の先頭で止める */
+  }
+
   .hero {
     min-height: calc(100vh - 64px);
     display: flex;
@@ -492,3 +509,4 @@ body {
     transition: none;
   }
 }
+
